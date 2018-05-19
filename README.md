@@ -1,2 +1,2 @@
-# React-Tic-Tac-Toe
-A modern way to compose a classic game
+# React-page-setup
+A modern way to compose standard webpages.
