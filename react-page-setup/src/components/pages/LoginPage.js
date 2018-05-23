@@ -3,17 +3,16 @@ import LoginForm from '../forms/LoginForm';
 
 
 class LoginPage extends React.Component {
-    submit = data => {
-        console.log(data);
-    };
-    render() {
-        return (
-     
-            <div>
-                <h1> Login Page </h1>
+    submit = data => 
+        this.props.login(data).then(() => this.props.history.push("/"));
+
+        render() {
+            return (
+                <div>
+                    <h1> Login Page </h1>
+
                 <LoginForm submit={this.submit}/> 
-        
-        </div>
+            </div>
         );
     }
 }
